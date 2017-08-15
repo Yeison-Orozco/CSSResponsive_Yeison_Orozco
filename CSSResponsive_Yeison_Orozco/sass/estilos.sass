@@ -1,0 +1,158 @@
+/*
+    *Esta hoja de estilos ha sido creada por Yeison Orozco
+    *para NextUniversity
+    *
+    *
+    *El disenio que predomina es el de movil
+    *con las media quieries se ajustan los contenidos para la version de desktop
+    *
+    *
+    *Fuente importada desde google fonts
+    *
+    *font-family: 'Dancing Script', cursive;
+    */
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700')
+
+*,
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    outline: none
+
+body
+    width: 94%
+    margin: 10px 3%
+    background-color: #02010a
+    text-align: center
+    font-family: 'Dancing Script', cursive
+    font-weight: bold
+    font-size: 18pt
+    animation: slider 1s ease forwards
+
+header
+    background-color: #5b7989
+    border-radius: 10px 10px 0 0
+    padding-bottom: 20px
+
+h1
+    color: white
+    text-shadow: 2px 2px 2px #02010a
+    padding: 10px 25px
+
+nav ul
+    list-style: none
+    display: flex
+    justify-content: center
+    li
+        padding: 5px 10px
+    a
+        color: white
+        &:visited
+            color: white
+
+img
+    width: 80%
+    margin: 25px
+
+#imagenPrincipal
+    background-color: #82c3a6
+    img
+        box-shadow: 3px 3px 0px black
+
+#secciones
+    background-color: #d5c75F
+    img
+        transition: 0.5s
+    a
+        color:  black
+        &:visited
+            color: black
+
+.paisajes
+    img
+        border: 1px solid black
+        box-shadow: 3px 3px 0px black
+    img:hover
+        transform: rotate(10deg)
+        border: 2px solid #82c3a6
+        box-shadow: 3px 3px 0px #82c3a6
+
+.retratos
+    padding-bottom: 20px
+    img
+        border: 1px solid black
+        box-shadow: 3px 3px 0px black
+    img:hover
+        transform: translate(5px,-20px)
+        border: 2px solid #82c3a6
+        box-shadow: 3px 3px 0px #82c3a6
+
+.galeria
+    img
+        box-shadow: 3px 3px 0px black
+    img:nth-child(1)
+        filter: blur(10px)
+    img:nth-child(even)
+        filter: grayscale(90%)
+    img:nth-child(3)
+        filter: sepia(90%)
+
+footer
+    border-radius: 0px 0px 10px 10px
+    background-color: #C6d5c5
+    padding: 20px
+    text-align: left
+    div
+        padding: 20px
+    ul
+        list-style-type: none
+    a
+        color: black
+
+.redes_sociales ul li
+    display: flex
+    text-align: left
+    align-items: center
+    img
+        width: 30px
+        margin: 10px 5px
+
+@keyframes slider
+    0%
+        transform: translateY(100%)
+    90%
+        transform: translateY(-20px)
+    100%
+        transform: translateY(0)
+
+@media all and (min-width: 601px)
+    body
+        font-size: 100%
+
+    header
+        display: flex
+        align-content: center
+
+    nav
+        margin: auto 15px auto auto
+
+    h1
+        font-size: 25pt
+
+    #secciones
+        display: flex
+        .paisajes,
+        .retratos
+            width: 50%
+            flex-direction: column
+        .galeria
+            width: 100%
+            img
+                width: 28%
+                margin: 3% 2%
+
+    footer
+        display: flex
+        font-size: 100%
+        div
+            width: 25%

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Yeison Orozco">
+        <meta name="description" content="Actividad final sobre diseño web responsive de Next University">
+        <link rel="stylesheet" href="css/estilos.css">
+        <!--
+
+                Esta pagina web ha sido creada y mantenida por Yeison Orozco para NextUniversity
+
+                *Las imagenes son responsivas y tienen su tamanio predefinido por el dispositivo en el que se ven (Movil o Desktop)
+                *Codigo facil de leer
+
+                 -->
+        <title>Inicio - Actividad Final CSS Responsive</title>
+    </head>
+    <body>
+        <header>
+            <h1>Comenzando con la Fotografía</h1>
+            <nav>
+                <ul>
+                    <li><a class="menu" href="index.html">Inicio</a></li>
+                    <li><a class="menu" href="paisajes.html">Paisajes</a></li>
+                    <li><a class="menu" href="retratos.html">Retratos</a></li>
+                </ul>
+            </nav>
+        </header>
+            <section id="imagenPrincipal">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="img/movil/1-austin-neill-160132-Movil.jpg">
+                    <img src="img/desktop/1-austin-neill-160132-DK.jpg" alt="Photo by Austin Neill on Unsplash">
+                </picture>
+            </section>
+            <section id="secciones">
+                <article class="paisajes">
+                    <a href="paisajes.html">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="img/movil/1-joshua-earle-117661-Movil.jpg">
+                            <img src="img/desktop/1-joshua-earle-117661-DK.jpg" alt="Photo by Joshua Earle on Unsplash">
+                        </picture>
+                        <p>Paisajes</p>
+                    </a>
+                </article>
+                <article class="retratos">
+                    <a href="retratos.html">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="img/movil/1-h-heyerlein-199082-Movil.jpg">
+                            <img src="img/desktop/1-h-heyerlein-199082-DK.jpg" alt="Photo by h heyerlein on Unsplash">
+                        </picture>
+                        <p>Retratos</p>
+                    </a>
+                </article>
+            </section>
+            <footer>
+                <div class="contacto">
+                    <h2>Contacto</h2>
+                    <ul>
+                        <li><a href="mailto:info@fotografia.com">info@fotografia.com</a></li>
+                        <li>Av Siempre viva #48e78</li>
+                        <li>Teléfono: 555 - 315730</li>
+                    </ul>
+                </div>
+                <div class="terminos">
+                    <h2>Términos</h2>
+                    <p>Conoce nuestros términos y condiciones...</p>
+                </div>
+                <div class="redes_sociales">
+                    <h2>Redes Sociales</h2>
+                    <p>Comparte nuestras redes</p>
+                    <ul>
+                        <li><img src="img/redes/facebook.svg" alt="">Comenzando Fotografía</li>
+                        <li><img src="img/redes/twitter.svg" alt="">@Comenzando_Fotografía</li>
+                        <li><img src="img/redes/youtube.svg" alt="">Comenzando Fotografía</li>
+                    </ul>
+                </div>
+                <div class="derechos">
+                    <h2>Derechos</h2>
+                    <p>&copyYeison Orozco - 2017</p>
+                </div>
+            </footer>
+    </body>
+</html>
